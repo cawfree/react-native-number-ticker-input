@@ -35,6 +35,23 @@ export default () => {
   const [value, setValue] = useState(0);
   return (
     <NumberTickerInput
+      height={100}
+      significantContainerStyle={{
+        backgroundColor: 'white',
+      }}
+      decimalContainerStyle={{
+        backgroundColor: 'lightgrey',
+      }}
+      significantTickerStyle={{
+        fontSize: 60,
+        fontFamily: 'monospace',
+      }}
+      decimalTickerStyle={{
+        fontSize: 60,
+        fontFamily: 'monospace',
+        color: 'red',
+      }}
+      decimalDigits={1}
       value={value}
       onChange={setValue}
     />
