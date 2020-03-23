@@ -48,7 +48,7 @@ Property | Type | Required | Default value | Description
 :--- | :--- | :--- | :--- | :---
 height|number|no|100| Defines the component height.
 value|number|no|0| Defines the current value.
-onChange|func|no|0| Callback to update the value.
+onChange|func|no|() => null| Callback to update the value.
 significantDigits|number|no|4| The number of digits to show before the decimal point.
 significantContainerStyle|style|no|undefined| The style of the outer container for a significant digit.
 significantTickerStyle|style|no|undefined| The style of an individual number ticker for a significant digit.
