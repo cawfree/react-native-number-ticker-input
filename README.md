@@ -5,6 +5,10 @@ A numeric input in the style of a ticker, which supports [Android](https://devel
   <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
 </a>
 
+<p align="center">
+  <img alt="react-native-number-ticker-input" src="./public/demo.gif" />
+</p>
+
 ## Getting Started
 
 Using [`npm`]():
