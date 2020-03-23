@@ -1,6 +1,10 @@
 # react-native-number-ticker-input
 A numeric input in the style of a ticker, which supports [Android](https://developer.android.com/), [iOS](https://developer.apple.com/) and [Web](https://github.com/necolas/react-native-web).
 
+<a href="#badge">
+  <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+</a>
+
 ## Getting Started
 
 Using [`npm`]():
@@ -44,7 +48,6 @@ onChange|func|no|0| Callback to update the value.
 significantDigits|number|no|4| The number of digits to show before the decimal point.
 significantContainerStyle|style|no|undefined| The style of the outer container for a significant digit.
 significantTickerStyle|style|no|undefined| The style of an individual number ticker for a significant digit.
-
 decimalDigits|number|no|2| The number of decimal digits.
 decimalContainerStyle|style|no|undefined| The style of the outer container for a decimal digit.
 decimalTickerStyle|style|no|undefined| The style of an individual number ticker for a decimal digit.
