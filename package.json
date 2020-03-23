@@ -1,0 +1,40 @@
+{
+  "name": "react-native-number-ticker-input",
+  "version": "0.0.1-alpha.0",
+  "description": "📟 A customizable numeric input in the style of a ticker.",
+  "main": "dist",
+  "repository": "https://github.com/cawfree/react-native-number-ticker-input",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prettify": "yarn prettier --write \"**/*.js\"",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "number",
+    "ticker",
+    "input",
+    "field",
+    "component"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "leasot": "^10.1.0",
+    "prettier": "^2.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-doc-generator": "^1.2.5",
+    "react-native": "^0.61.5"
+  }
+}
