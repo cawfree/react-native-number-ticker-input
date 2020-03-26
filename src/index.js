@@ -71,7 +71,7 @@ const Ticker = ({ value, height, containerStyle, style, ...extraProps }) => {
 const applyZeroPadding = (input, length) =>
   (Array(length + 1).join("0") + input).slice(-length);
 
-const NumberTickerInput = ({
+const NumberTickerInput = React.forwardRef(({
   style,
   height,
   value,
@@ -84,8 +84,7 @@ const NumberTickerInput = ({
   decimalDigits,
   DecimalPoint,
   ...extraProps
-}) => {
-  console.log(value);
+}, ref) => {
   const digits = applyZeroPadding(
     value,
     significantDigits + decimalDigits
@@ -94,6 +93,7 @@ const NumberTickerInput = ({
     <View style={[{ height }, styles.overflowHidden]} pointerEvents="box-none">
       <TextInput
         {...extraProps}
+        ref={ref}
         selectTextOnFocus
         keyboardType="numeric"
         style={[StyleSheet.absoluteFill, styles.invisible]}
@@ -138,7 +138,7 @@ const NumberTickerInput = ({
       </View>
     </View>
   );
-};
+});
 
 NumberTickerInput.propTypes = {
   ...View.propTypes,
